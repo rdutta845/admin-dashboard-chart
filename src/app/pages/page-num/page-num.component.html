@@ -1,0 +1,66 @@
+<div *ngIf="pageData.layout == 'box'">
+    <div class="box" *ngFor="let boxItem of boxSection; let i=index">
+      <div *ngIf="boxItem.type == 'video'">
+       <div class="box-header with-border">
+          <h3 class="box-title">{{boxItem.title}}</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <div class="box-body">
+          <object style="width:100%;height:100%;height: 461.25px; float: none; clear: both; margin: 2px auto;" [data]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)"></object>
+        </div>
+       </div>
+        <div *ngIf="boxItem.type == 'iframe'">
+          <div class="box-header with-border">
+          <h3 class="box-title">{{boxItem.title}}</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <div class="box-body longPage">
+          	<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)" width="100%" height="1500" frameborder='0' scrolling='no'></iframe>
+        </div>
+        </div>
+        </div>
+</div>
+<div *ngIf="pageData.layout == 'tab'">
+    <div class="row">
+              <!-- START CUSTOM TABS -->
+            <div class="col-md-12">
+              <!-- Custom Tabs -->
+              <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li *ngFor="let boxItem of boxSection; let i=index;let isFirst = first" [class.active]="isFirst"><a href="#tab_{{i}}" data-toggle="tab">{{boxItem.title}}</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div *ngFor="let boxItem of boxSection; let i=index;let isFirst = first" [class.active]="isFirst" class="tab-pane" id="tab_{{i}}" [ngStyle]="{ 'height' : boxItem.height}">
+                    <div *ngIf="boxItem.type == 'iframe'">
+                    <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)" width="100%" height="{{boxItem.height}}" frameborder='0' scrolling='no'></iframe>
+                    </div>
+                    <div *ngIf="boxItem.type == 'video'">
+                        <object style="width:100%;height:100%; float: none; clear: both; margin: 2px auto;" [ngStyle]="{ 'height' : boxItem.height}" [data]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)"></object>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
+              <!-- nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+
+          </div>
+          <!-- /.row -->
+    </div>
+          <!-- END CUSTOM TABS -->

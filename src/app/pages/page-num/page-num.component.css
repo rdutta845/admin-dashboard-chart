@@ -1,0 +1,9 @@
+.box-body.box-iframe {
+        padding: 0;
+    margin: 0 -15px;
+}
+
+.pageHeightAuto footer{ display: none; }
+body.pageHeightAuto{ overflow-y: hidden; }
+
+.box-body.longPage{ height: 1500px;}
