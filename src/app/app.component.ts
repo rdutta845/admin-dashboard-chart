@@ -119,15 +119,15 @@ export class AppComponent implements OnInit {
           'link': ['/page/ne3-shopping'],
         },
         {
-          'title': 'MEDICINE',
+          'title': 'Health',
           'link': ['/page/ne4-shopping'],
         },
         {
-          'title': 'Flight',
+          'title': 'Cosmetics',
           'link': ['/page/ne5-shopping'],
         },
         {
-          'title': 'Hotel',
+          'title': 'Travel',
           'link': ['/page/ne6-shopping'],
         }
       ]

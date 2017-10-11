@@ -46,7 +46,7 @@
                 <div class="tab-content box-iframe">
                   <div *ngFor="let boxItem of boxSection; let i=index;let isFirst = first" [class.active]="isFirst" class="tab-pane" id="tab_{{i}}">
                     <div *ngIf="boxItem.type == 'iframe'">
-                    <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)" width="100%" [ngStyle]="{'height': singleIframeHeight+'px'}" frameborder='0' scrolling='no'></iframe>
+                    <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)" width="100%" [ngStyle]="{'height': singleIframeHeight+'px'}" frameborder='0' scrolling='yes'></iframe>
                     </div>
                     <div *ngIf="boxItem.type == 'video'">
                         <object style="width:100%;height:100%; float: none; clear: both; margin: 2px auto;" [ngStyle]="{ 'height' : boxItem.height}" [data]="sanitizer.bypassSecurityTrustResourceUrl(boxItem.url)"></object>

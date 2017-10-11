@@ -478,7 +478,7 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
           },
           ///////////////****Edited By Rahul****//////////////////////
           "ne-shopping": {
-            "title": "World of Online Shopping",
+            "title": "Fashion & Accessories Shopping",
             "titleSub" : "",
             "layout": "box",
             "section": [
@@ -498,7 +498,7 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
             ]
           },
           "ne1-shopping": {
-            "title": "World of Online Shopping",
+            "title": "Fashion & Accessories Shopping",
             "titleSub" : "",
             "layout": "tab",
             "section": [
@@ -520,11 +520,29 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
           "ne2-shopping": {
             "title": "Appliances",
             "titleSub" : "",
-            "layout": "box",
+            "layout": "tab",
             "section": [
               {
                 "url": "https://docs.google.com/document/d/e/2PACX-1vTugyMplDvzve-o4YF4BcwBqD-bZOvYPsf2jQ_g3TjhO34HHsIn-x8qaXlygCBbLkaRrCLCokOUbcrt/pub?embedded=true",
                 "title": "Air Conditioners",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vR3OgdKrfWT3kcx5nDcAQx0jFQQtMmzhaVX6dbIOz3JmZNDWNEq_RGtaBGyzWeogFx4H2tBou9X1pXB/pub?embedded=true",
+                "title": "Washing Machine",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vSFI-5Q2zrAbZZBdn0AVRMRvJS4DbkKFRHksWTMzvu49Gy0Ep9tzqyBAzJJnf1HsJBeVRs2OYrHcRs5/pub?embedded=true",
+                "title": "Refrigerator",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vSPT88qKEmutOoq7oVPM7tPa6_t5gL0HQF-aplWXRXmre2PY3mt0CCEwZoeJZYknke5LJgCUMuKGh_Y/pub?embedded=true",
+                "title": "Television",
                 "type": "iframe",
                 "height": "100%"
               }
@@ -534,24 +552,30 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
           "ne3-shopping": {
             "title": "Electronics",
             "titleSub" : "",
-            "layout": "box",
+            "layout": "tab",
             "section": [
               {
                 "url": "https://docs.google.com/document/d/e/2PACX-1vQ_vFULY3arGDHQIxtijvz9ZyTt23or6Uu2TY-6rMMne0QvcHwc0gtdMJr20dDTt_BqPsrhxr7IFLn5/pub?embedded=true",
                 "title": "Smartphone",
                 "type": "iframe",
                 "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vSQaK2tsoQ4jEDaL_dP4zgHX3xsnILWTW-CRTH8JFZeCgN5JJH4gliV51bA_YmH80Ivxu2My9av29y7/pub?embedded=true",
+                "title": "Laptop",
+                "type": "iframe",
+                "height": "100%"
               }
             ]
           },
           "ne4-shopping": {
-            "title": "MEDICINE",
+            "title": "Health",
             "titleSub" : "",
-            "layout": "box",
+            "layout": "tab",
             "section": [
               {
                 "url": "https://docs.google.com/document/d/e/2PACX-1vRk_WkIZWU3DK1_0uZ9WWECWPnYCHn8u5tE0dob83xM7Kcjs4jD6p86JzfVfhyX6bcf41rB2vkDORlj/pub?embedded=true",
-                "title": "MEDICINE",
+                "title": "Medicine",
                 "type": "iframe",
                 "height": "100%"
               }
@@ -559,10 +583,48 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
             ]
           },
           "ne5-shopping": {
-            "title": "Flight",
+            "title": "Cosmetics",
             "titleSub" : "",
-            "layout": "box",
+            "layout": "tab",
             "section": [
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vTFwTrdH0meICi2PRJbQOa96vn_a1UE-XGM2GOEr0up-mcFP2loO-MgxZzEmg-feeZClyoGSwO0dGYP/pub?embedded=true",
+                "title": "Introduction and makeup",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vTeVbjrK9ip9EMe7LKay8bU9sIN9LhWWLvPts5DF5YCYw9DqjELXv080zdCCUknQ5ff5I12O61gVOmL/pub?embedded=true",
+                "title": "Hair,Skin & Other Personal Care",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vThO_gWoAPQzzPFxO7m5xKPO-spZZ29WQ5fHRECN1q6flFs7i7lj5CpiMjGoFERTNyg-uB9869nlR7d/pub?embedded=true",
+                "title": "Fragrance & Men's Personal Care",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vQcIwdIMS-ZQp9-1fA0ldOsgGcnwdeceq3Uv0skwvoe4Qe892mNlYgU65Ytt_mjlalyhkdyX5YS13Mf/pub?embedded=true",
+                "title": "Mom & Baby Care",
+                "type": "iframe",
+                "height": "100%"
+              }
+              
+            ]
+          },
+          "ne6-shopping": {
+            "title": "Travel",
+            "titleSub" : "",
+            "layout": "tab",
+            "section": [
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vRfPntidDFZwL3zHxsCVCbTpQ0E3Qp2y5DwWg_w2R_HXWrCP1ji8xMEvMfULkZGXQ6bAaiF3lPwJ-rf/pub?embedded=true",
+                "title": "Hotel",
+                "type": "iframe",
+                "height": "100%"
+              },
               {
                 "url": "https://docs.google.com/document/d/e/2PACX-1vRfJNk9Xt06AgerPXR6XllzmDGSzr7khVqQS9FrPBh62e0BPRoGQ7n6k99_Ip8j-Ldrf7AKuVp7HSbi/pub?embedded=true",
                 "title": "Flight",
@@ -572,14 +634,20 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
               
             ]
           },
-          "ne6-shopping": {
-            "title": "Hotel",
+          "ne7-shopping": {
+            "title": "Furniture",
             "titleSub" : "",
-            "layout": "box",
+            "layout": "tab",
             "section": [
               {
-                "url": "https://docs.google.com/document/d/e/2PACX-1vRfPntidDFZwL3zHxsCVCbTpQ0E3Qp2y5DwWg_w2R_HXWrCP1ji8xMEvMfULkZGXQ6bAaiF3lPwJ-rf/pub?embedded=true",
-                "title": "Hotel",
+                "url": "https://docs.google.com/document/d/e/2PACX-1vRthZ0C7Vd14uSkeD9evgDMESGTzcGytToewYJgzZeLLVq0Q847-Ex8Rg1i6rrffL4zuOF9mWR03tiI/pub?embedded=true",
+                "title": "Furniture",
+                "type": "iframe",
+                "height": "100%"
+              },
+              {
+                "url": "https://docs.google.com/document/d/e/2PACX-1vSjCizOYwlAbxzYjCf64z1-2L5ctGZhgeTn7uzKsjLK0mvuE-RWTvVX9ZylK51DjKw1PIctyBBb7DY1/pub?embedded=true",
+                "title": "Home Decor",
                 "type": "iframe",
                 "height": "100%"
               }
