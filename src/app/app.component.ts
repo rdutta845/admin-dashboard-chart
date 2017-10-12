@@ -129,6 +129,10 @@ export class AppComponent implements OnInit {
         {
           'title': 'Travel',
           'link': ['/page/ne6-shopping'],
+        },
+        {
+          'title': 'Furniture ',
+          'link': ['/page/ne7-shopping'],
         }
       ]
     },
