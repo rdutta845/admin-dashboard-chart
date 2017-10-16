@@ -7,7 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNumComponent } from './pages/page-num/page-num.component';
-
+import { ChartComponent } from './pages/chart/chart.component';
+import { DashComponent } from './pages/dashboard/dashboard.component';
 // Components
 import { AppComponent } from './app.component';
 
@@ -27,6 +28,16 @@ const routes: Routes = [
         component: PageNumComponent,
         path: 'page/:id'
       },
+      {
+        canActivate: [CanActivateGuard],
+        component: ChartComponent,
+        path: 'chart'
+      },
+      {
+        canActivate: [CanActivateGuard],
+        component: DashComponent,
+        path: 'dashboard'
+      }
     ],
     component: LayoutsAuthComponent,
     path: ''

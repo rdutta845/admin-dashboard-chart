@@ -190,7 +190,22 @@ export class AppComponent implements OnInit {
       'link': ['http://cashlu.com'],
       'external': true,
       'target': '_blank'
-    }/*,
+    },
+    {
+      'title': 'Chart',
+      'icon': 'money',
+      'link': ['/chart']
+      // 'external': true,
+      // 'target': '_blank'
+    },
+    {
+      'title': 'dashboard',
+      'icon': 'money',
+      'link': ['/dashboard']
+      // 'external': true,
+      // 'target': '_blank'
+    }
+    /*,
     {
       'title': 'External Links',
       'icon': 'link',
