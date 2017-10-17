@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { ChartModule } from 'angular2-highcharts/dist';
 import { AppComponent } from './app.component';
 
 // modules
@@ -16,6 +16,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChartComponent } from './pages/chart/chart.component';
 import { DashComponent } from './pages/dashboard/dashboard.component';
+
+export declare let require: any;
 
 const pages = [
     HomeComponent,
@@ -40,6 +42,7 @@ import { routing } from './app.routes';
     FormsModule,
     HttpModule,
     NgxAdminLteModule,
+    ChartModule.forRoot(require('highcharts')),
     routing
   ],
   providers: [],

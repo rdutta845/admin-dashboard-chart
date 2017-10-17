@@ -20,12 +20,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/morris.js/morris.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../node_modules/admin-lte/dist/js/app.js"
+        "../node_modules/admin-lte/dist/js/app.js",
+        "../node_modules/morris.js/morris.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
