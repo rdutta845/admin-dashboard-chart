@@ -654,6 +654,19 @@ export class PageNumComponent implements OnInit, AfterViewInit, OnDestroy {
               
             ]
           },
+          "mobile-asssesment":{
+            "title": "Deals and Offers",
+            "titleSub" : "",
+            "layout": "box",
+            "section": [
+              {
+                "url": "https://docs.google.com/forms/d/11jGUG62Udm_04tbpIavE1hTiPWX5q36lWJu8KwUixWM/viewform?embedded=true",
+                "title": "Deals and Offers",
+                "type": "iframe",
+                "height": "100%"
+              }
+            ]
+          },
           //////////////*****Ended By Rahul*****//////////////////////
           "deals-offers-guide": {
             "title": "Deals and Offers",

@@ -137,6 +137,17 @@ export class AppComponent implements OnInit {
       ]
     },
     {
+      'title': "Shopping Assesment",
+      'icon':'graduation-cap',
+      'sublinks':[
+        {
+          'title':'Electronics',
+          'link':['/page/mobile-asssesment']
+        }
+      ]
+    },
+
+    {
       'title': 'Business Guidance',
       'icon': 'link',
       'sublinks': [
@@ -184,6 +195,7 @@ export class AppComponent implements OnInit {
         }
 	  ]
 	},
+
     {
       'title': 'Start Shopping',
       'icon': 'money',
